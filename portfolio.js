@@ -6,7 +6,7 @@ export const greetings = {
 	description:
 		"I'm passionate Software Engineer having diversified experience in Software Development, Testing, DevOps and Release Management.I am an open-source Enthusiast. I love to experiment and figure out ways to improve product quality. Driven by curiosity to learn & share new skills. Loves helping to strategies and facilitate testing, working with teams to incorporate those strategies into the development phase.",
 	resumeLink:
-		"https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing",
+		"https://drive.google.com/file/d/1zFYtkQNABuklmct6LejqRt3rcrcePSRE/view?usp=sharing",
 };
 
 export const openSource = {
