@@ -1,12 +1,15 @@
 {
-  "name": "developer-portfolio",
+  "name": "portfolio-using-react",
   "version": "1.0.0",
-  "description": "Software Developer Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
+  "description": "Portfolio Template built with react.js bootstrap that helps you showcase your work and skills as a software developer.",
   "main": "index.js",
-  "repository": "https://github.com/1hanzla100/hanzla-portfolio.git",
-  "author": "Hanzla Tauqeer",
+  "repository": "https://github.com/MJavedAli/portfolio-using-react",
+  "homepage": "https://MJavedAli.github.io/portfolio-using-react",
+  "author": "Javed Ali",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "gh-pages": "^4.0.0"
   }
 }
