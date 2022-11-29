@@ -4,7 +4,7 @@ export const greetings = {
 	name: "Javed Ali",
 	title: "Hi, I'm Javed",
 	description:
-		"I'm working as a Lead Software Engineer at Software AG.I hae a diversified experience in Software Development, Quality Engineering & DevOps.I am an open-source Enthusiast. I love to experiment and figure out ways to improve product quality. Driven by curiosity to learn & share new skills. I love talking about Space, Technology, Physics, Comparative Theology & Urdu as a Language",
+		"I'm working as a Lead Software Engineer at Software AG.I have a diversified experience in Software Development, Quality Engineering & DevOps.I am an open-source Enthusiast. I love to experiment and figure out ways to improve product quality. Driven by curiosity to learn & share new skills. I love talking about Space, Technology, Physics, Comparative Theology & Urdu as a Language",
 	resumeLink:
 		"https://drive.google.com/file/d/1zFYtkQNABuklmct6LejqRt3rcrcePSRE/view?usp=sharing",
 };
@@ -34,6 +34,18 @@ export const skillsSection = {
 			skills: [
 				emoji(
 					"⚡ Building responsive Single-Page-Apps (SPA) in Angular"
+				),
+				emoji(
+					"⚡ Designed dynamic and browser compatible web pages using HTML5, CSS3, JavaScript, Bootstrap, Angular Material"
+				),
+				emoji(
+					"⚡ Deliver engaging user experience through optimization of images, code and cross browser compatibility"
+				),
+				emoji(
+					"⚡ Designed dynamic and browser compatible web pages using HTML5, CSS3, JavaScript, Bootstrap, Angular Material"
+				),
+				emoji(
+					"⚡ Developed RESTful APIs for profile management, authentication, authorization , Cart,Chekout & Payment gateway integration."
 				),
 				emoji(
 					"⚡ Building RESTful APIs in Django & Django REST Framework"
