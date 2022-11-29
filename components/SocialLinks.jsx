@@ -24,7 +24,7 @@ const SocialLinks = () => {
 			{socialLinks.linkedin && (
 				<Button
 					className="btn-icon-only rounded-circle ml-1"
-					color="twitter"
+					color="facebook"
 					rel="noopener"
 					aria-label="Linkedin"
 					href={socialLinks.linkedin}
@@ -88,6 +88,20 @@ const SocialLinks = () => {
 				>
 					<span className="btn-inner--icon">
 						<i className="fa fa-twitter" />
+					</span>
+				</Button>
+			)}
+			{socialLinks.xing && (
+				<Button
+					className="btn-icon-only rounded-circle"
+					color="facebook"
+					href={socialLinks.xing}
+					target="_blank"
+					rel="noopener"
+					aria-label="Xing"
+				>
+					<span className="btn-inner--icon">
+						<i className="fa fa-xing" />
 					</span>
 				</Button>
 			)}

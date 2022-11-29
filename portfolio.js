@@ -4,7 +4,7 @@ export const greetings = {
 	name: "Javed Ali",
 	title: "Hi, I'm Javed",
 	description:
-		"I'm passionate Software Engineer having diversified experience in Software Development, Testing, DevOps and Release Management.I am an open-source Enthusiast. I love to experiment and figure out ways to improve product quality. Driven by curiosity to learn & share new skills. Loves helping to strategies and facilitate testing, working with teams to incorporate those strategies into the development phase.",
+		"I'm working as a Lead Software Engineer at Software AG.I hae a diversified experience in Software Development, Quality Engineering & DevOps.I am an open-source Enthusiast. I love to experiment and figure out ways to improve product quality. Driven by curiosity to learn & share new skills. I love talking about Space, Technology, Physics, Comparative Theology & Urdu as a Language",
 	resumeLink:
 		"https://drive.google.com/file/d/1zFYtkQNABuklmct6LejqRt3rcrcePSRE/view?usp=sharing",
 };
@@ -20,6 +20,7 @@ export const socialLinks = {
 	linkedin: "https://www.linkedin.com/in/javedalix/",
 	github: "https://github.com/MJavedAli",
 	twitter: "https://twitter.com/javedalix",
+	xing: "https://www.xing.com/profile/Javed_Ali10",
 };
 
 export const skillsSection = {
@@ -27,18 +28,70 @@ export const skillsSection = {
 	subTitle:
 		"CRAZY SOFTWARE ENGINEER WHO WANTS TO EXPLORE EVERY TECH STACK",
 	data: [
-
 		{
-			title: "DevOps & Cloud Computing",
+			title: "Software Development",
+			lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
+			skills: [
+				emoji(
+					"⚡ Building responsive Single-Page-Apps (SPA) in Angular"
+				),
+				emoji(
+					"⚡ Building RESTful APIs in Django & Django REST Framework"
+				),
+			],
+			softwareSkills: [
+				{
+					skillName: "JavaScript",
+					fontAwesomeClassname: "logos:javascript",
+				},
+				{
+					skillName: "Python",
+					fontAwesomeClassname: "logos:python",
+				},
+				{
+					skillName: "Java",
+					fontAwesomeClassname: "logos:java",
+				},
+				{
+					skillName: "Angular",
+					fontAwesomeClassname: "vscode-icons:file-type-angular",
+				},
+				{
+					skillName: "React",
+					fontAwesomeClassname: "logos:react",
+				},
+				{
+					skillName: "Django",
+					fontAwesomeClassname: "vscode-icons:file-type-django",
+				},
+				{
+					skillName: "NodeJS",
+					fontAwesomeClassname: "logos:nodejs",
+				},
+				{
+					skillName: "HTML-5",
+					fontAwesomeClassname: "vscode-icons:file-type-html",
+				},
+				{
+					skillName: "CSS-3",
+					fontAwesomeClassname: "vscode-icons:file-type-css",
+				},
+			],
+		},
+		{
+			title: "Cloud Infrastructure & DevOps",
 			lottieAnimationFile: "/lottie/skills/cloudinfra.json", // Path of Lottie Animation JSON File
 			skills: [
 				emoji("⚡ Experience in developing CI/CD pipelines using Jenkins, Github Actions and Python"),
 				emoji("⚡ Experience in provisioning and managing cloud infrastructure on AWS and Azure"),
 				emoji(
-					"⚡ Automating cloud infrastructure using Terraform & Ansible"
+					"⚡ Worked on lambda functions to aggregate data for incoming events and then stored them in DynamoDB and used them for further processing"
 				),
 				emoji(
-					"⚡ Experience in managing and deploying containerized applications on Kubernetes"
+					"⚡ Developing Docker Images to support Develoopment, Testing teams in their pipelines, distributed Jenkins, ElasticSearch, SonarQube, Nexus, Artifactory, etc."
+				),
+				emoji(
+					"⚡ Utilized CloudWatch to monitor resources such as EC2, S3, RDS, EBSVolumes, etc. used alarms and monitor logs"
 				),
 			],
 			softwareSkills: [
@@ -78,7 +131,7 @@ export const skillsSection = {
 			],
 		},
 		{
-			title: "Test Engineering",
+			title: "Quality Engineering",
 			lottieAnimationFile: "/lottie/skills/qa-engineer.json", // Path of Lottie Animation JSON File
 			skills: [
 				emoji(
@@ -126,68 +179,27 @@ export const skillsSection = {
 				}
 			],
 		},
-		{
-			title: "Software Development",
-			lottieAnimationFile: "/lottie/skills/fullstack.json", // Path of Lottie Animation JSON File
-			skills: [
-				emoji(
-					"⚡ Building responsive Single-Page-Apps (SPA) in Angular"
-				),
-				emoji(
-					"⚡ Building RESTful APIs in Django & Django REST Framework"
-				),
-			],
-			softwareSkills: [
-				{
-					skillName: "JavaScript",
-					fontAwesomeClassname: "logos:javascript",
-				},
-				{
-					skillName: "Python",
-					fontAwesomeClassname: "logos:python",
-				},
-				{
-					skillName: "Java",
-					fontAwesomeClassname: "logos:java",
-				},
-				{
-					skillName: "HTML-5",
-					fontAwesomeClassname: "vscode-icons:file-type-html",
-				},
-				{
-					skillName: "CSS-3",
-					fontAwesomeClassname: "vscode-icons:file-type-css",
-				},
-				{
-					skillName: "Angular",
-					fontAwesomeClassname: "vscode-icons:file-type-angular",
-				},
-				{
-					skillName: "Django",
-					fontAwesomeClassname: "vscode-icons:file-type-django",
-				},
-				{
-					skillName: "NodeJS",
-					fontAwesomeClassname: "logos:nodejs",
-				},
-			],
-		},
 	],
 };
 
 export const SkillBars = [
 	{
-		Stack: "Test Engineering", //Insert stack or technology you have experience in
-		progressPercentage: "90", //Insert relative proficiency in percentage
-	},
-	{
-		Stack: "Devops",
+		Stack: "Cloud Infrastructure",
 		progressPercentage: "50",
 	},
 	{
-		Stack: "Programming",
+		Stack: "DevOps",
 		progressPercentage: "70",
 	},
+	{
+		Stack: "Software Development", //Insert stack or technology you have experience in
+		progressPercentage: "60", //Insert relative proficiency in percentage
+	},
+	{
+		Stack: "Quality Engineering",
+		progressPercentage: "80",
+	},
+	
 ];
 
 export const educationInfo = [
@@ -215,8 +227,8 @@ export const experience = [
 		date: "Nov 2020 – Present",
 		desc: "Working closely with German Test Leads to make sure the test coverage is accurate and ensures all functional aspects of the code delivered have been addressed and testing is making progress with respect to the plan.",
 		descBullets: [
-			"Reduced the overall time from 90 days to 14 days for prod deployment by developing a component based staging cycle in CI pipeline",
-			"Identified key areas of manual regression testing of IoT platform build over Cloud & Edge and developed BDD Test Framework using Protractor, JavaScript.",
+			" Developed & deployed containerized action runners based on custom image for GitHub workflows on Azure Cloud and scaled up as per demand using Helm Charts",
+			"Customised workflow templates for different projects requiring special rules and reportable values",
 		],
 	},
 	{
@@ -224,9 +236,9 @@ export const experience = [
 		company: "Cognizant",
 		companylogo: "/img/icons/common/cognizant.jpg",
 		date: "Sept 2021 - Oct 2021",
-		desc: "Worked as django web developer to create a website in which I integrated computer vision AI model (built by the team of BleedAI) to process YouTube URLs and show Real Time processing on Website using Django Channels WebSockets , threading for running multiple instances of AI Model, jQuery for UI rendering and deployed it on Heroku server.",
+		desc: " As a part of CoE team member played pivotal role for the development of a tool-agnostic Unified Automation Framework accommodating Selenium and Coded UI APIs.",
 		descBullets: [
-			"Reduced the overall time from 90 days to 14 days for prod deployment by developing a component based staging cycle in CI pipeline",
+			"Integrated third-party application APIs (One-Trust & ServiceNow) for ticket processing till completion, Implemented SFTP file validation,GH page integration for code documentation",
 			"Identified key areas of manual regression testing of IoT platform build over Cloud & Edge and developed BDD Test Framework using Protractor, JavaScript.",
 		],
 	},
@@ -235,10 +247,10 @@ export const experience = [
 		company: "HCL Technologies",
 		companylogo: "/img/icons/common/hcl.jpg",
 		date: "Sept 2021",
-		desc: "Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.",
+		desc: "Worked as Software Developer for major Telecom clients,Involved in integration and testing of real-time network technology IN, NAP, pre-paid services, charging and policy.",
 		descBullets: [
-			"Reduced the overall time from 90 days to 14 days for prod deployment by developing a component based staging cycle in CI pipeline",
-			"Identified key areas of manual regression testing of IoT platform build over Cloud & Edge and developed BDD Test Framework using Protractor, JavaScript.",
+			"Developed UI components for email and link sharing of documents and files for CMS using Angular 8, HTML, CSS, JavaScript, Bootstrap, and jQuery",
+			"Worked with axios library to make API calls to backend services and used Jasmine and Karma for unit testing",
 		],
 	},
 	{
@@ -246,10 +258,10 @@ export const experience = [
 		company: "First American India",
 		companylogo: "/img/icons/common/fai.jpg",
 		date: "Sept 2021",
-		desc: "Worked as a Django Developer to integrate Stripe payment gateway in wapidu.com and Created REST APIs using Django REST Framework to integrate Django Stripe backend to Vue.js Frontend and Deployed it on Azure based Docker container registry.",
+		desc: "Worked as MTS in RnD team for the development of a file management application of the company's internal data.",
 		descBullets: [
-			"Reduced the overall time from 90 days to 14 days for prod deployment by developing a component based staging cycle in CI pipeline",
-			"Identified key areas of manual regression testing of IoT platform build over Cloud & Edge and developed BDD Test Framework using Protractor, JavaScript.",
+			"Integrated Title and Settlement Transactions system - flagship product and business backbone of the organization supporting over 100+ other Title Products with over 20,000 internal users in over 40+ countries.",
+			"Primarily engaged in creation of re-usable and standard automation scripts and SQL Reporting Library",
 		],
 	},
 ];

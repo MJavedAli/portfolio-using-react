@@ -161,6 +161,22 @@ const Navigation = () => {
 										</NavLink>
 									</NavItem>
 								)}
+								{socialLinks.xing && (
+									<NavItem>
+										<NavLink
+											rel="noopener"
+											aria-label="Xing"
+											className="nav-link-icon"
+											href={socialLinks.xing}
+											target="_blank"
+										>
+											<i className="fa fa-xing" />
+											<span className="nav-link-inner--text d-lg-none ml-2">
+												Twitter
+											</span>
+										</NavLink>
+									</NavItem>
+								)}
 							</Nav>
 						</UncontrolledCollapse>
 					</Container>
