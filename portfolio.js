@@ -244,7 +244,7 @@ export const experience = [
 		role: "Senior Associate",
 		company: "Cognizant",
 		companylogo: "/img/icons/common/cognizant.jpg",
-		date: "Apr 2019 - Nov 2020",
+		date: "Apr 2019 – Nov 2020",
 		desc: " As a part of CoE team member played pivotal role for the development of a tool-agnostic Unified Automation Framework accommodating Selenium and Coded UI APIs.",
 		descBullets: [
 			"Integrated third-party application APIs (One-Trust & ServiceNow) for ticket processing till completion, Implemented SFTP file validation,GH page integration for code documentation",
@@ -255,7 +255,7 @@ export const experience = [
 		role: "Senior Test Engineer",
 		company: "HCL Technologies",
 		companylogo: "/img/icons/common/hcl.jpg",
-		date: "Oct 2016 - Apr 2019",
+		date: "Oct 2016 – Apr 2019",
 		desc: "Worked as Software Developer for major Telecom clients,Involved in integration and testing of real-time network technology IN, NAP, pre-paid services, charging and policy.",
 		descBullets: [
 			"Developed UI components for email and link sharing of documents and files for CMS using Angular 8, HTML, CSS, JavaScript, Bootstrap, and jQuery",
@@ -266,7 +266,7 @@ export const experience = [
 		role: "Member Technical Staff",
 		company: "First American India",
 		companylogo: "/img/icons/common/fai.jpg",
-		date: "Aug 2013 - Oct 2016",
+		date: "Aug 2013 – Oct 2016",
 		desc: "Worked as MTS in RnD team for the development of a file management application of the company's internal data.",
 		descBullets: [
 			"Integrated Title and Settlement Transactions system - flagship product and business backbone of the organization supporting over 100+ other Title Products with over 20,000 internal users in over 40+ countries.",
