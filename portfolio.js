@@ -42,9 +42,6 @@ export const skillsSection = {
 					"⚡ Deliver engaging user experience through optimization of images, code and cross browser compatibility"
 				),
 				emoji(
-					"⚡ Designed dynamic and browser compatible web pages using HTML5, CSS3, JavaScript, Bootstrap, Angular Material"
-				),
-				emoji(
 					"⚡ Developed RESTful APIs for profile management, authentication, authorization , Cart,Chekout & Payment gateway integration."
 				),
 				emoji(
