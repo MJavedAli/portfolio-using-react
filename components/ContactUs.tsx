@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import classnames from "classnames";
-import Alert from "./Alerts";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import classnames from 'classnames';
+import Alert from './Alerts';
 
 import {
   Button,
@@ -15,45 +15,64 @@ import {
   Container,
   Row,
   Col,
-} from "reactstrap";
+} from 'reactstrap';
 
 export const ContactUs = () => {
-  const form = useRef();
-  const [alert, setAlert] = React.useState(null);
+  const form = useRef<HTMLFormElement>(null);
+  const [alert, setAlert] = useState<{
+    color: string;
+    icon: string;
+    message: string;
+  } | null>(null);
 
   const successAlert = {
-    color: "success",
-    icon: "ni ni-like-2",
-    message: " Your message has been sent successfully!",
+    color: 'success',
+    icon: 'ni ni-like-2',
+    message: ' Your message has been sent successfully!',
   };
 
   const errorAlert = {
-    color: "danger",
-    icon: "ni ni-bell-55",
-    message: " Oops! Something went wrong. Please try again later.",
+    color: 'danger',
+    icon: 'ni ni-bell-55',
+    message: ' Oops! Something went wrong. Please try again later.',
   };
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log();
+    console.log('submitting');
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setAlert(successAlert);
-        },
-        (error) => {
-          console.log(error.text);
-          setAlert(errorAlert);
-        }
-      );
+    console.log(form.current);
+
+    const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+
+    const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+
+    const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (
+      emailJsServiceId &&
+      emailJsTemplateId &&
+      emailJsPublicKey &&
+      form.current
+    ) {
+      emailjs
+        .sendForm(
+          emailJsServiceId,
+          emailJsTemplateId,
+          form.current,
+          emailJsPublicKey
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setAlert(successAlert);
+          },
+          (error) => {
+            console.log(error.text);
+            setAlert(errorAlert);
+          }
+        );
+    }
   };
 
   return (
@@ -76,7 +95,7 @@ export const ContactUs = () => {
                     <p className="mt-0">
                       Reach out to me using the form below.
                     </p>
-                    <FormGroup className={classnames("mt-5", {})}>
+                    <FormGroup className={classnames('mt-5', {})}>
                       <InputGroup className="input-group-alternative">
                         <InputGroupAddon addonType="prepend">
                           <InputGroupText>
@@ -121,7 +140,6 @@ export const ContactUs = () => {
                         color="default"
                         size="lg"
                         type="submit"
-                        onClick={sendEmail}
                       >
                         Send Message
                       </Button>
