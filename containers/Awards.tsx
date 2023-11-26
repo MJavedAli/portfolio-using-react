@@ -1,8 +1,7 @@
 import { awards } from "../portfolio";
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import FeedbackCard from "../components/FeedbackCard";
-import { Fade } from "react-reveal";
+import AwardsCard from "../components/AwardsCard";
 
 const Awards = () => {
 	return awards && (
@@ -24,7 +23,7 @@ const Awards = () => {
 					{awards.map((data, i) => {
 						return (
 							<Col key={i} lg={6}>
-								<FeedbackCard data={data} />
+								<AwardsCard data={data} />
 							</Col>
 						);
 					})}
