@@ -8,13 +8,14 @@ import {
   SocialLinksType,
   GreetingsType,
   Awards,
+  CertificationsType,
 } from './types/sections';
 
 export const greetings: GreetingsType = {
   name: 'Javed Ali',
   title: "Hi I'm Javed",
   description:
-    "I'm working as a Lead Software Engineer at Software AG.I have a diversified experience in Software Development, Cloud Infrastructure, Automation & DevOps. I love talking about Space, Technology, Cricket & Comparative Theology",
+    "I'm working as Principal Engineer at Oracle .I have a diversified experience in Software Development, Cloud Computing, Automation & DevOps. I love talking about Space, Technology, Cricket & Comparative Theology",
   resumeLink:
     'https://drive.google.com/file/d/1iYh16IyCHyWwSA_zpt4eYD68XFKp_Qsj/view?usp=drive_link',
 };
@@ -156,14 +157,14 @@ export const SkillBars: SkillBarsType[] = [
   },
   {
     Stack: 'Backend',
-    progressPercentage: '50',
+    progressPercentage: '70',
   },
   {
-    Stack: 'Cloud Infrastructure',
-    progressPercentage: '60',
+    Stack: 'Cloud Computing',
+    progressPercentage: '70',
   },
   {
-    Stack: 'CI/CD Automation',
+    Stack: 'DevOps & SRE',
     progressPercentage: '70',
   },
 ];
@@ -186,11 +187,22 @@ export const educationInfo: EducationType[] = [
 ];
 
 export const experience: ExperienceType[] = [
+  {
+    role: "Principal Engineer",
+    company: "Oracle",
+    companyLogo: "/img/icons/common/oracle.png",
+    date: "May 2024 - Present",
+    desc: "Working closely with Program Managers to make sure the test coverage is accurate and ensures all functional aspects of the code delivered have been addressed and testing is making progress with respect to the plan.",
+    descBullets: [
+      " Developed & deployed containerized action runners based on custom image for GitHub workflows on Azure Cloud and scaled up as per demand using Helm Charts",
+      "Customised workflow templates for different projects requiring special rules and reportable values",
+    ],
+  },
     {
       role: "Lead Software Engineer",
       company: "Software AG",
       companyLogo: "/img/icons/common/sag.jpg",
-      date: "Nov 2020 – Present",
+      date: "Nov 2020 - Apr 2024",
       desc: "Working closely with Program Managers to make sure the test coverage is accurate and ensures all functional aspects of the code delivered have been addressed and testing is making progress with respect to the plan.",
       descBullets: [
         " Developed & deployed containerized action runners based on custom image for GitHub workflows on Azure Cloud and scaled up as per demand using Helm Charts",
@@ -231,6 +243,65 @@ export const experience: ExperienceType[] = [
       ],
     },
   ];
+
+  export const certificates: CertificationsType[] = [
+    {
+      role: "AWS Certified Solutions Architect",
+      company: "AWS",
+      companyLogo: "/img/CSA.png",
+      date: "May 2024",
+      desc: "see credential",
+      credentialUrl: "985ba784-c5c7-4d01-9bfb-fd48d4bbf940"
+    },
+      {
+        role: "AWS Certified Developer",
+        company: "AWS",
+        companyLogo: "/img/DVA.png",
+        date: "May 2024",
+        desc: "see credential",
+      credentialUrl: "5674e7ee-30b7-44c1-904e-c54b79eb3424"
+      },
+      {
+        role: "GitOps - Continuous Delivery on Kubernetes with Flux",
+        company: "The Linux Foundation",
+        companyLogo: "/img/LFS269.png",
+        date: "Apr 2023",
+        desc: "see credential",
+        credentialUrl: "fc33c6bb-20f4-4508-81fe-5388828a48c3"
+      },
+      {
+        role: "DevOps and SRE Fundamentals",
+        company: "The Linux Foundation",
+        companyLogo: "/img/LFS261.png",
+        date: "Apr 2023",
+        desc: "see credential",
+        credentialUrl: "f7a9e9bf-7071-46fd-91d5-d67ebd909e3b"
+      },
+      {
+        role: "Jenkins Essentialsx",
+        company: "The Linux Foundation",
+        companyLogo: "/img/LFS267.png",
+        date: "Apr 2023",
+        desc: "see credential",
+      credentialUrl: "7b3aa92f-4693-4d5e-a7a9-ccb31da990b9"
+      },
+      {
+        role: "Implementing DevSecOps",
+        company: "The Linux Foundation",
+        companyLogo: "/img/LFS262.png",
+        date: "Apr 2023",
+        desc: "see credential",
+      credentialUrl:"94552d4e-0888-460f-a8a0-153281a4962d"
+      },
+      {
+        role: "CI/CD with Jenkins X",
+        company: "The Linux Foundation",
+        companyLogo: "/img/LFS268.png",
+        date: "Apr 2023",
+        desc: "see credential",
+        credentialUrl: "e50bfa5d-4683-403f-9f6d-699dc19f60f0"
+      },
+    ];
   
 export const awards: Awards[] = [
 	{

@@ -71,6 +71,16 @@ export type ExperienceType = {
   descBullets?: string[];
 };
 
+export type CertificationsType = {
+  role: string;
+  company: string;
+  companyLogo: string;
+  date: string;
+  desc: string;
+  credentialUrl: string
+};
+
+
 // * PROJECT SECTION
 
 export type ProjectType = {

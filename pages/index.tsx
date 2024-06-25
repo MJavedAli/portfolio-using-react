@@ -6,6 +6,7 @@ const Proficiency = dynamic(() => import('../containers/Proficiency'));
 const Education = dynamic(() => import('../containers/Education'));
 const Experience = dynamic(() => import('../containers/Experience'));
 const Awards = dynamic(() => import('../containers/Awards'));
+const CertificationsType = dynamic(() => import('../containers/Certificates'));
 const GithubProfileCard = dynamic(
   () => import('../components/GithubProfileCard')
 );
@@ -28,8 +29,9 @@ export default function Home({
       <Proficiency />
       <Education />
       <Experience />
+      <CertificationsType/>
       <Awards/>
-      {showContactUs ? <Contact /> : null}
+\      {showContactUs ? <Contact /> : null}
       <GithubProfileCard {...githubProfileData} />
     </div>
   );
