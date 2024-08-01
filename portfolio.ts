@@ -249,57 +249,57 @@ export const experience: ExperienceType[] = [
       role: "AWS Certified Solutions Architect",
       company: "AWS",
       companyLogo: "/img/CSA.png",
-      date: "May 2024",
       desc: "see credential",
-      credentialUrl: "985ba784-c5c7-4d01-9bfb-fd48d4bbf940"
+      credentialUrl: "https://www.credly.com/badges/985ba784-c5c7-4d01-9bfb-fd48d4bbf940"
     },
       {
         role: "AWS Certified Developer",
         company: "AWS",
         companyLogo: "/img/DVA.png",
-        date: "May 2024",
         desc: "see credential",
-      credentialUrl: "5674e7ee-30b7-44c1-904e-c54b79eb3424"
+      credentialUrl: "https://www.credly.com/badges/5674e7ee-30b7-44c1-904e-c54b79eb3424"
+      },
+      {
+        role: "Oracle Cloud Infrastructure Foundation Associate",
+        company: "Oracle",
+        companyLogo: "/img/OCI.png",
+        desc: "see credential",
+        credentialUrl: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=4B1F21F0F4D90584B8C6280E790EA85ABA49DBEA3FBF5275BB09E2F964EDC074"
       },
       {
         role: "GitOps - Continuous Delivery on Kubernetes with Flux",
         company: "The Linux Foundation",
         companyLogo: "/img/LFS269.png",
-        date: "Apr 2023",
         desc: "see credential",
-        credentialUrl: "fc33c6bb-20f4-4508-81fe-5388828a48c3"
+        credentialUrl: "https://www.credly.com/badges/fc33c6bb-20f4-4508-81fe-5388828a48c3"
       },
       {
         role: "DevOps and SRE Fundamentals",
         company: "The Linux Foundation",
         companyLogo: "/img/LFS261.png",
-        date: "Apr 2023",
         desc: "see credential",
-        credentialUrl: "f7a9e9bf-7071-46fd-91d5-d67ebd909e3b"
+        credentialUrl: "https://www.credly.com/badges/f7a9e9bf-7071-46fd-91d5-d67ebd909e3b"
       },
       {
         role: "Jenkins Essentialsx",
         company: "The Linux Foundation",
         companyLogo: "/img/LFS267.png",
-        date: "Apr 2023",
         desc: "see credential",
-      credentialUrl: "7b3aa92f-4693-4d5e-a7a9-ccb31da990b9"
+      credentialUrl: "https://www.credly.com/badges/7b3aa92f-4693-4d5e-a7a9-ccb31da990b9"
       },
       {
         role: "Implementing DevSecOps",
         company: "The Linux Foundation",
         companyLogo: "/img/LFS262.png",
-        date: "Apr 2023",
         desc: "see credential",
-      credentialUrl:"94552d4e-0888-460f-a8a0-153281a4962d"
+      credentialUrl:"https://www.credly.com/badges/94552d4e-0888-460f-a8a0-153281a4962d"
       },
       {
         role: "CI/CD with Jenkins X",
         company: "The Linux Foundation",
         companyLogo: "/img/LFS268.png",
-        date: "Apr 2023",
         desc: "see credential",
-        credentialUrl: "e50bfa5d-4683-403f-9f6d-699dc19f60f0"
+        credentialUrl: "https://www.credly.com/badges/ e50bfa5d-4683-403f-9f6d-699dc19f60f0"
       },
     ];
   

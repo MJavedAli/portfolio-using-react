@@ -75,7 +75,6 @@ export type CertificationsType = {
   role: string;
   company: string;
   companyLogo: string;
-  date: string;
   desc: string;
   credentialUrl: string
 };

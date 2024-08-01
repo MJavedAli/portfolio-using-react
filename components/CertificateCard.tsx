@@ -2,8 +2,6 @@ import React from 'react';
 import {
   Card,
   CardBody,
-  CardTitle,
-  CardSubtitle,
   CardText,
   Col,
 } from 'reactstrap';
@@ -12,50 +10,39 @@ import { CertificationsType } from '../types/sections';
 
 const CertificateCard = ({
   companyLogo,
-  company,
-  role,
-  date,
   desc,
   credentialUrl
 }: CertificationsType) => {
   return (
-    <Col lg="6">
+    <Col lg="3" md="6" className="mb-4">
       <Fade left duration={2000}>
-        <Card
-          style={{ flex: 1 }}
-          className="shadow-lg--hover mb-6 shadow border-0 text-center rounded"
-        >
-          <CardBody className="">
+        <Card style={{ height: '100%' }} className="shadow-lg--hover mb-4 shadow border-0 text-center rounded">
+          <CardBody className="d-flex flex-column">
             <img
               src={companyLogo}
               style={{
                 objectFit: 'cover',
-                left: 0,
-                right: 0,
-                top: '7rem',
-                marginLeft: 'auto',
-                marginRight: 'auto',
                 width: '8rem',
                 height: '8rem',
+                margin: 'auto',
               }}
               alt={companyLogo}
             />
-            <CardTitle tag="h4" className="mb-2">
-              {company}
-            </CardTitle>
-            <CardSubtitle tag="h5" className="mb-2">
-              {role}
-            </CardSubtitle>
-            <CardSubtitle>{date}</CardSubtitle>
-            <CardText tag="div" className="description my-3 text-center">
-            {credentialUrl ? (
-                <a href={"https://www.credly.com/badges/"+credentialUrl} target="_blank" rel="noopener noreferrer">
-                  {desc}
-                </a>
-              ) : (
-                <div>{desc}</div>
-              )}            
+            <div className="mt-3">
+              <CardText className="description my-3 text-center">
+                {credentialUrl ? (
+                  <a
+                    href={`${credentialUrl}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {desc}
+                  </a>
+                ) : (
+                  <div>{desc}</div>
+                )}
               </CardText>
+            </div>
           </CardBody>
         </Card>
       </Fade>
